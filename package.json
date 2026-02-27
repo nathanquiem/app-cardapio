@@ -15,8 +15,8 @@
     "framer-motion": "^11.11.0",
     "lucide-react": "latest",
     "next": "15.1.7",
-    "react": "19.0.0-rc-65a56d0e-20241020",
-    "react-dom": "19.0.0-rc-65a56d0e-20241020"
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/node": "^20",
