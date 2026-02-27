@@ -21,6 +21,8 @@ ENV NEXT_TELEMETRY_DISABLED=1
 
 # Disable TypeScript and ESLint checking during build as it might fail due to missing context in Docker
 # You should verify types and linting locally during CI/CD
+ARG NEXT_PUBLIC_SUPABASE_URL
+ARG NEXT_PUBLIC_SUPABASE_ANON_KEY
 ENV NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL
 ENV NEXT_PUBLIC_SUPABASE_ANON_KEY=$NEXT_PUBLIC_SUPABASE_ANON_KEY
 
