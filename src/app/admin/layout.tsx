@@ -1,6 +1,10 @@
 import Link from "next/link";
 import { LayoutDashboard, Package, Tags, Settings, Store } from "lucide-react";
 
+// Force all admin pages to be dynamic (server-rendered on demand)
+// This prevents build-time errors when env vars are not available
+export const dynamic = "force-dynamic";
+
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col md:flex-row">
